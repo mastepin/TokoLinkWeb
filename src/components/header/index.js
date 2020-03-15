@@ -3,7 +3,7 @@ import "../../App.css"
 
 function header() {
 	return (
-		<nav className='flex items-center justify-between flex-wrap primary-color p-6 shadow-xl fixed w-full'>
+		<nav className='flex items-center justify-between flex-wrap primary-color p-6 shadow-xl fixed w-full z-50'>
 			<div className='flex items-center flex-shrink-0 text-white mr-6'>
 				<svg
 					className='fill-current h-8 w-8 mr-2'
