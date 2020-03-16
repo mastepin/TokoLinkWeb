@@ -24,12 +24,27 @@ function cart() {
 											className='h-24 w-24 inline-block rounded-lg border border-blue-300 mr-8'
 											src={beras}
 										/>
-										<div className='inline-block'>
-											<p className='font-bold font-md'>Beras Mahal</p>
-											<p className='font-regular font-sm'>
+										<div className='inline-block w-full'>
+											<p className='font-bold text-md'>Beras Mahal</p>
+											<p className='font-regular text-sm'>
 												Ukuran 5kg per bungkus
 											</p>
-											<p className='font-bold font-lg'>Rp54000</p>
+											<p className='font-bold text-lg'>Rp54000</p>
+											<div className='flex justify-end'>
+												<p
+													id='substraction'
+													className='font-bold text-sm mr-2 cursor-pointer text-primary'>
+													-
+												</p>
+												<p id='count' className='font-bold text-sm mr-2'>
+													1
+												</p>
+												<p
+													id='addition'
+													className='font-bold mr-2 text-sm cursor-pointer text-primary'>
+													+
+												</p>
+											</div>
 										</div>
 									</div>
 									<div
@@ -39,12 +54,27 @@ function cart() {
 											className='h-24 w-24 inline-block rounded-lg border border-blue-300 mr-8'
 											src={beras}
 										/>
-										<div className='inline-block'>
-											<p className='font-bold font-md'>Beras Mahal</p>
-											<p className='font-regular font-sm'>
+										<div className='inline-block w-full'>
+											<p className='font-bold text-md'>Beras Mahal</p>
+											<p className='font-regular text-sm'>
 												Ukuran 5kg per bungkus
 											</p>
-											<p className='font-bold font-lg'>Rp54000</p>
+											<p className='font-bold text-lg'>Rp54000</p>
+											<div className='flex justify-end'>
+												<p
+													id='substraction'
+													className='font-bold text-sm mr-2 cursor-pointer text-primary'>
+													-
+												</p>
+												<p id='count' className='font-bold text-sm mr-2'>
+													1
+												</p>
+												<p
+													id='addition'
+													className='font-bold mr-2 text-sm cursor-pointer text-primary'>
+													+
+												</p>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -206,7 +236,7 @@ function cart() {
 							</div>
 						</div>
 					</div>
-					<div className='flex justify-end mt-8'>
+					<div className='flex justify-end mt-8 mr-4'>
 						<a
 							href='#'
 							className='primary-color text-white px-4 py-2 rounded-lg shadow-lg hover:shadow-xl hover:bg-blue-700'>

@@ -6,6 +6,7 @@ import App from "./App"
 import Cart from "./pages/cart"
 import LinkPage from "./pages/link"
 import NotFound from "./pages/404"
+import Toko from "./pages/toko"
 import * as serviceWorker from "./serviceWorker"
 
 const routing = (
@@ -14,6 +15,7 @@ const routing = (
 			<Route exact path='/' component={App} />
 			<Route path='/cart' component={Cart} />
 			<Route path='/link' component={LinkPage} />
+			<Route path='/toko' component={Toko} />
 			<Route component={NotFound} />
 		</Switch>
 	</Router>

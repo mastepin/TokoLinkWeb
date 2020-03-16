@@ -110,11 +110,37 @@ function App() {
 					</div>
 				</div>
 			</div>
-			<Link
-				to='/cart'
-				className='fixed bottom-0 right-0 m-8 px-6 py-6 rounded-full primary-color cursor-pointer shadow-md hover:shadow-xl'>
-				<i class='fas fa-shopping-cart fa-2x text-white'></i>
-			</Link>
+			<div className='p-20 pt-0'>
+				<div id='recomendedToko' className='w-full'>
+					<h3 id='sectionTitle' className='font-bold text-lg mb-4'>
+						Rekomendasi <span className='font-normal'>Toko</span>
+					</h3>
+					<div className='w-1/4 p-4 pl-0 inline-block'>
+						<Link to='/toko'>
+							<div className='bg-white rounded-lg p-6 shadow text-center hover:shadow-xl cursor-pointer'>
+								<div className='text-left'>
+									<h2 className='text-md font-regular mb-2'>Toko Bu Mitro</h2>
+									<p className='text-xs font-bold'>
+										Jl. baru 192, sidorejo lor, sidorejo, salatiga
+									</p>
+								</div>
+							</div>
+						</Link>
+					</div>
+					<div className='w-1/4 p-4 pl-0 inline-block'>
+						<Link to='/toko'>
+							<div className='bg-white rounded-lg p-6 shadow text-center hover:shadow-xl cursor-pointer'>
+								<div className='text-left'>
+									<h2 className='text-md font-regular mb-2'>Toko pak min</h2>
+									<p className='text-xs font-bold'>
+										Jl. Kauman no 99, sidorejo lor, sidorejo, salatiga
+									</p>
+								</div>
+							</div>
+						</Link>
+					</div>
+				</div>
+			</div>
 		</div>
 	)
 }

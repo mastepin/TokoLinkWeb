@@ -62,6 +62,11 @@ function header() {
 					</a>
 				</div>
 			</div>
+			<Link
+				to='/cart'
+				className='fixed bottom-0 right-0 m-8 px-6 py-6 rounded-full primary-color cursor-pointer shadow-md hover:shadow-xl'>
+				<i class='fas fa-shopping-cart fa-2x text-white'></i>
+			</Link>
 		</nav>
 	)
 }
