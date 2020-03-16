@@ -14,7 +14,7 @@ function cart() {
 							<h3 id='sectionTitle' className='font-bold text-lg'>
 								Keranjang <span className='font-normal'>Saya</span>
 							</h3>
-							<div className='py-4 px-2 my-8 bg-blue-200 rounded-lg mb-4'>
+							<div className='py-4 px-2 my-8 bg-blue-200 rounded-lg mb-4 shadow-lg hover:shadow-xl'>
 								<h4 className='font-bold text-lg mb-4'>Toko Wira Ekonomi</h4>
 								<div className='px-4'>
 									<div
@@ -92,6 +92,24 @@ function cart() {
 											<option>Grab</option>
 										</select>
 									</div>
+									<div id='alamat' className='mt-4 ml-8'>
+										<h4 className='text-xs font-bold flex-1'>
+											Alamat pengiriman
+										</h4>
+										<hr className='my-2' />
+										<p className='font-bold text-xs'>
+											Kelvin Kurniawan (082226720813)
+										</p>
+										<p className='font-normal text-xs mb-4'>
+											Jl. Baru (warung perempatan Jl.baru),Bancakan, Sidorejo
+											Lor, Salatiga Sidorejo, Kota Salatiga, 50714
+										</p>
+										<a
+											href='#'
+											className='bg-red-500 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-red-700 hover:shadow-xl'>
+											Ganti Alamat
+										</a>
+									</div>
 								</div>
 								<h4 className='font-bold text-lg mb-4 mt-8'>
 									Metode Pembayaran
@@ -146,10 +164,49 @@ function cart() {
 										</div>
 									</div>
 								</div>
+								<div className='product-checkout p-4 border rounded-lg shadow-lg hover:shadow-xl mt-4'>
+									<div id='subTotal' className='flex justify-between'>
+										<p className='font-normal text-sm'>Total Belanja</p>
+										<p className='font-bold text-sm'>Rp108.000</p>
+									</div>
+									<div id='discount' className='flex justify-between'>
+										<p className='font-normal text-sm'>
+											Potongan
+											<span className='font-bold text-xs text-green-700 ml-2'>
+												-20% member baru
+											</span>
+										</p>
+										<p className='font-bold text-sm'>Rp21.600</p>
+									</div>
+									<div id='discount' className='flex justify-between'>
+										<p className='font-normal text-sm'>
+											Potongan
+											<span className='font-bold text-xs text-green-700 ml-2'>
+												-10% menggunakan LinkPoints
+											</span>
+										</p>
+										<p className='font-bold text-sm'>Rp17.280</p>
+									</div>
+									<div id='afterDisc' className='flex justify-end'>
+										<p className='font-bold text-sm'>Rp69.120</p>
+									</div>
+									<div id='Ongkir' className='flex justify-between'>
+										<p className='font-normal text-sm'>Ongkos kirim</p>
+										<p className='font-bold text-sm'>Rp8.000</p>
+									</div>
+									<div id='BiayaLayanan' className='flex justify-between'>
+										<p className='font-normal text-sm'>Biaya Layanan</p>
+										<p className='font-bold text-sm'>Rp5.000</p>
+									</div>
+									<div id='Total' className='flex justify-between'>
+										<p className='font-normal text-sm'>Harus dibayar</p>
+										<p className='font-bold text-sm'>Rp82.120</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div className='w-full text-right'>
+					<div className='flex justify-end mt-8'>
 						<a
 							href='#'
 							className='primary-color text-white px-4 py-2 rounded-lg shadow-lg hover:shadow-xl hover:bg-blue-700'>

@@ -1,19 +1,21 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import { Route, Link, BrowserRouter as Router } from "react-router-dom"
+import { Route, Link, BrowserRouter as Router, Switch } from "react-router-dom"
 import "./index.css"
 import App from "./App"
 import Cart from "./pages/cart"
 import LinkPage from "./pages/link"
+import NotFound from "./pages/404"
 import * as serviceWorker from "./serviceWorker"
 
 const routing = (
 	<Router>
-		<div>
+		<Switch>
 			<Route exact path='/' component={App} />
 			<Route path='/cart' component={Cart} />
 			<Route path='/link' component={LinkPage} />
-		</div>
+			<Route component={NotFound} />
+		</Switch>
 	</Router>
 )
 ReactDOM.render(routing, document.getElementById("root"))

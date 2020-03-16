@@ -1,6 +1,6 @@
 import React from "react"
 import "./App.css"
-
+import { Link } from "react-router-dom"
 import Header from "./components/header"
 import beras from "./images/beras.jpg"
 
@@ -110,6 +110,11 @@ function App() {
 					</div>
 				</div>
 			</div>
+			<Link
+				to='/cart'
+				className='fixed bottom-0 right-0 m-8 px-6 py-6 rounded-full primary-color cursor-pointer shadow-md hover:shadow-xl'>
+				<i class='fas fa-shopping-cart fa-2x text-white'></i>
+			</Link>
 		</div>
 	)
 }
