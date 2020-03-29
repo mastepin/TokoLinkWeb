@@ -7,6 +7,8 @@ import Cart from "./pages/cart"
 import LinkPage from "./pages/link"
 import NotFound from "./pages/404"
 import Toko from "./pages/toko"
+import Login from "./pages/login"
+import itemDetail from "./pages/itemDetail"
 import * as serviceWorker from "./serviceWorker"
 
 const routing = (
@@ -16,6 +18,8 @@ const routing = (
 			<Route path='/cart' component={Cart} />
 			<Route path='/link' component={LinkPage} />
 			<Route path='/toko' component={Toko} />
+			<Route path='/login' component={Login} />
+			<Route path='/itemDetail' component={itemDetail} />
 			<Route component={NotFound} />
 		</Switch>
 	</Router>
